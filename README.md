@@ -1,8 +1,30 @@
+
 # API de Gestion des Tâches d'Équipe
 
-Une API RESTful complète pour gérer les tâches d'une équipe, développée avec Node.js, Express et MongoDB.
+[![Documentation Swagger](https://img.shields.io/badge/Documentation-Swagger-85EA2D?logo=swagger)](https://task-manager-api-5889.onrender.com/docs)
+
+Une API RESTful complète pour gérer les tâches d'une équipe, avec documentation interactive, développée avec Node.js, Express et MongoDB.
 
 ---
+
+## 📚 Documentation en ligne
+
+L'API est entièrement documentée avec **Swagger UI**, permettant de :
+
+- Visualiser tous les endpoints  
+- Tester les requêtes directement depuis le navigateur  
+- Voir les schémas de requêtes/réponses  
+
+### 🔗 Accéder à la documentation
+👉 [https://task-manager-api-5889.onrender.com/docs](https://task-manager-api-5889.onrender.com/docs)
+
+### Capture d'écran
+![Swagger UI Preview](https://i.imgur.com/JcQ8Mdn.png)
+
+---
+
+## Fonctionnalités
+[...] (le reste de votre README existant)
 
 ## Fonctionnalités
 
