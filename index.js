@@ -4,6 +4,8 @@ const path = require('path');
 const helmet = require('helmet');
 const cors = require('cors');
 const morgan = require('morgan');
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocs = require('./config/swagger');
 
 const connectDB = require('./config/db');
 const authRoutes = require('./routes/authRoutes');
@@ -23,10 +25,12 @@ app.use(morgan('dev'));
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // routes
-app.get("/", (req, res) => res.redirect("/api/tasks"));
+app.get('/', (req, res) => res.redirect('/docs'));
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/tasks', taskRoutes);
+// Route documentation
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 // gestion des erreurs
 app.use(errorHandler);
